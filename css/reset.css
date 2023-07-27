@@ -1,1 +1,26 @@
 @charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face { 
+    font-family: 'omyu pretty'; /* 폰트 명 */
+    src: url('./font/omyu_pretty.eot'); /* IE9 미만 */
+    src: local('omyu_pretty'),/* 웹 브라우저가 지원하지 않는 불필요한 웹 폰트 호출을 막는데 사용 */
+    url('./font/omyu_pretty.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./font/omyu_pretty.woff2') format('woff2'), /* WOFF의 차기 포맷 */
+    url('./font/omyu_pretty.woff') format('woff'), /* 표준 브라우저 */
+    url('./font/omyu_pretty.ttf') format('truetype'),  /* =ttf Safari, Android, iOS 모바일 */
+    url('./font/omyu_pretty.svg#KakaoaLt') format('svg');/* TTF에서도 커버가 안되는 기기들에 대한 대응 */
+}
+
+body {
+    font-family: 'omyu pretty';
+}
+
+a {
+    text-decoration: none;
+}
