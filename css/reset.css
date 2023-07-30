@@ -7,20 +7,77 @@
 }
 
 @font-face { 
-    font-family: 'omyu pretty'; /* 폰트 명 */
-    src: url('./font/omyu_pretty.eot'); /* IE9 미만 */
-    src: local('omyu_pretty'),/* 웹 브라우저가 지원하지 않는 불필요한 웹 폰트 호출을 막는데 사용 */
-    url('./font/omyu_pretty.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('./font/omyu_pretty.woff2') format('woff2'), /* WOFF의 차기 포맷 */
-    url('./font/omyu_pretty.woff') format('woff'), /* 표준 브라우저 */
-    url('./font/omyu_pretty.ttf') format('truetype'),  /* =ttf Safari, Android, iOS 모바일 */
-    url('./font/omyu_pretty.svg#KakaoaLt') format('svg');/* TTF에서도 커버가 안되는 기기들에 대한 대응 */
+    font-family: 'omyu pretty';
+    src: url('./font/omyu_pretty.eot');
+    src: local('omyu_pretty'),
+    url('./font/omyu_pretty.eot?#iefix') format('embedded-opentype'),
+    url('./font/omyu_pretty.woff2') format('woff2'),
+    url('./font/omyu_pretty.woff') format('woff'),
+    url('./font/omyu_pretty.ttf') format('truetype'),
+    url('./font/omyu_pretty.svg#KakaoaLt') format('svg');
 }
 
 body {
     font-family: 'omyu pretty';
 }
 
+ul,
+ol,
+li {
+    list-style: none;
+}
+
 a {
+    display: block;
+    color: black;
     text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    display: block;
+    font-weight: normal;
+}
+
+img,
+input,
+textarea,
+button {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 0;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+address {
+    font-style: none;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+    display: block;
 }
