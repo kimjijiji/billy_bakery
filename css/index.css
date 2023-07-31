@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 .wrapper {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+    /* background-color: blueviolet; */
 }
 
 
@@ -34,7 +36,7 @@ header {
     display: flex;
 }
 
-.mainmenu a {
+.mainmenu .gnb a {
     font-size: 25px;
     padding-left: 30px;
 }
@@ -51,7 +53,7 @@ header {
 main {
     position: relative;
     width: 100%;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .main-ad .main-img > img {
@@ -209,13 +211,32 @@ main {
 }
 
 /* mdpick */
-.mdpick {
-    position: relative;
+.mdpick h3 {
     margin-top: 140px;
 }
 
-.mdpick img {
+.mdpick .menulist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mdpick .menulist > div {
+    width: 380px;
+}
+
+.mdpick .menulist img {
     width: 380px; height: 380px;
+}
+
+.mdpick .menulist .menu-txt {
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+
+.mdpick .more-btn a:hover {
+    border-radius: 50%;
+    background-color: rgba(254, 248, 186, 1);
+    text-decoration: none;
 }
 
 .mdpick .more-btn .btn1,
@@ -229,23 +250,16 @@ main {
     background-color: rgba(254, 248, 186, 0.7);
 }
 
-
-.mdpick .more-btn a:hover {
-    border-radius: 50%;
-    background-color: rgba(254, 248, 186, 1);
-    text-decoration: none;
-}
-
 .mdpick .more-btn .btn1 {
-    top: 385px; left: 490px;
+    top: 385px; left: 335px;
 }
 
 .mdpick .more-btn .btn2 {
-    top: 385px; left: 600px;
+    top: 385px; left: 735px;
 }
 
 .mdpick .more-btn .btn3 {
-    top: 385px; left: 800px;
+    top: 385px; left: 1135px;
 }
 
 /* event */
@@ -281,17 +295,20 @@ main {
 /*sns*/
 .sns {
     margin-top: 140px;
+    padding-bottom: 135px;
     background-color: #fef8ba;
 }
 
 .sns h3 {
     margin: 75px 0;
+    font-size: 40px;
     text-align: center;
     background-color: #ffd966;
 }
 
-.sns img {
-    width: 295px; height: 360px;
+.sns .img-list > img {
+    width: 292px; height: 340px;
+    padding-bottom: 5px;
 }
 
 
@@ -299,11 +316,12 @@ main {
 footer {
     position: relative;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 /* logo-info-flexbox */
 .logo-info-flexbox {
+    display: flex;
     height: 240px;
     justify-content: space-between;
     align-items: center;
@@ -313,13 +331,8 @@ footer {
     width: 140px; height: 140px;
 }
 
-.info-menu ul,
-.info-business address {
+.info-menu ul {
     display: flex;
-}
-
-.info-menu ul a {
-    padding-right: 5px;
 }
 
 .info-menu a:hover,
@@ -327,12 +340,21 @@ footer {
     color: darkblue;
 }
 
+.info-business address a {
+    display: inline-block;
+}
 
+.info-menu a,
+.info-business address p,
+.info-business address a,
+.info-business .copyright {
+    font-size: 20px;
+}
 
 /*fix-menu*/
 .fix-menu {
     position: fixed;
-    right: 100px;
+    right: 40px;
     bottom: 100px;
 }
 
