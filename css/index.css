@@ -6,41 +6,6 @@
     padding: 0 10px;
 }
 
-.newmenu1,
-.newmenu2 {
-    position: relative;
-}
-
-.newmenu1 .menu-txt,
-.newmenu2 .menu-txt {
-    position: absolute;
-    padding-top: 22px;
-    padding-left: 30px;
-    height: 100px;
-    color: #fff;
-}
-
-.newmenu1 .menu-txt > h4,
-.newmenu2 .menu-txt > h4 {
-    font-size: 30px;
-}
-
-.newmenu1 .menu-txt > p,
-.newmenu2 .menu-txt > p {
-    font-size: 24px;
-}
-
-.menu4,
-.menu5,
-.menu6 {
-    display: none;
-}
-
-.bestmenu .slide-btn .btn1,
-.bestmenu .slide-btn .btn2 {
-    position: absolute;
-    top: 350px;
-}
 
 /* ========= header ========= */
 header {
@@ -84,22 +49,20 @@ header {
 /* ========= main ========= */
 /* main-ad */
 main {
+    position: relative;
     width: 100%;
     background-color: lightcoral;
 }
 
-.main-ad {
-    position: relative;
+.main-ad .main-img > img {
+    width: 100%; height: 100%;
 }
 
 .main-ad .title {
     position: absolute;
     text-align: center;
-    top: 26%; left: 37%;
-}
-
-.main-ad img {
-    width: 100%;
+    width: 520px;
+    top: 160px; left: 440px;
 }
 
 .main-ad .title > p {
@@ -112,11 +75,47 @@ main {
     -webkit-text-stroke: 2px #fff;
 }
 
+.main-ad .menu-list {
+    font-size: 20px;
+}
+
+.main-ad .menu-list strong {
+    font-size: 16px;
+}
+
+.main-ad .menu-list .menu1 {
+    position: absolute;
+    top: 180px; left: 120px;
+}
+
+.main-ad .menu-list .menu2 {
+    position: absolute;
+    top: 440px; left: 400px;
+}
+
+.main-ad .menu-list .menu3 {
+    position: absolute;
+    top: 430px; left: 860px;
+}
+
+.main-ad .menu-list .menu4 {
+    position: absolute;
+    top: 130px; left: 1100px;
+}
 
 /* newmenu */
 .newmenu h3 {
     margin-top: 140px;
     margin-bottom: 30px;
+}
+
+.newmenu-list {
+    display: flex;
+}
+
+.newmenu1,
+.newmenu2 {
+    position: relative;
 }
 
 .newmenu1 > img {
@@ -131,34 +130,63 @@ main {
 
 .newmenu2 > img {
     width: 510px;
+    margin-left: 40px;
 }
 
 .newmenu2 .menu-txt {
-    top: 531px;
+    top: 531px; left: 40px;
     width: 510px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.newmenu1 .menu-txt,
+.newmenu2 .menu-txt {
+    position: absolute;
+    height: 100px;
+    padding-top: 22px;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.newmenu1 .menu-txt > h4,
+.newmenu2 .menu-txt > h4 {
+    font-size: 30px;
+}
+
+.newmenu1 .menu-txt > p,
+.newmenu2 .menu-txt > p {
+    font-size: 24px;
+}
 
 /* bestmenu */
+.bestmenu-slide-btn h3 {
+    margin-top: 141px;
+}
+
 .bestmenu {
     position: relative;
 }
 
-.bestmenu h3 {
-    margin-top: 141px;
+.bestmenu .bestmenu-list {
+    display: flex;
 }
 
-.bestmenu img {
+.bestmenu-list img {
     width: 300px; height: 300px;
+}
+
+.bestmenu .bestmenu-list > div {
+    margin: 0 46px;
+}
+
+.bestmenu .menu4,
+.bestmenu .menu5,
+.bestmenu .menu6 {
+    display: none;
 }
 
 .bestmenu h4 {
     margin-top: 20px;
-}
-
-.bestmenu .slide-btn .btn2 {
-    left: 1000px;
 }
 
 .bestmenu .slide-btn span {
@@ -170,10 +198,20 @@ main {
     border-radius: 50%;
 }
 
+.bestmenu .slide-btn .btn1 {
+    position: absolute;
+    top: 150px;
+}
+
+.bestmenu .slide-btn .btn2 {
+    position: absolute;
+    top: 150px; right: 0;
+}
 
 /* mdpick */
 .mdpick {
     position: relative;
+    margin-top: 140px;
 }
 
 .mdpick img {
@@ -258,9 +296,38 @@ main {
 
 
 /* ========= footer ========= */
+footer {
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+}
+
+/* logo-info-flexbox */
+.logo-info-flexbox {
+    height: 240px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer-logo img {
     width: 140px; height: 140px;
 }
+
+.info-menu ul,
+.info-business address {
+    display: flex;
+}
+
+.info-menu ul a {
+    padding-right: 5px;
+}
+
+.info-menu a:hover,
+.info-business a:hover {
+    color: darkblue;
+}
+
+
 
 /*fix-menu*/
 .fix-menu {
