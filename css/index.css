@@ -87,7 +87,7 @@ main {
 
 .main-ad .menu-list .menu1 {
     position: absolute;
-    top: 180px; left: 120px;
+    top: 175px; left: 120px;
 }
 
 .main-ad .menu-list .menu2 {
@@ -97,12 +97,12 @@ main {
 
 .main-ad .menu-list .menu3 {
     position: absolute;
-    top: 430px; left: 860px;
+    top: 430px; left: 850px;
 }
 
 .main-ad .menu-list .menu4 {
     position: absolute;
-    top: 130px; left: 1100px;
+    top: 120px; left: 1100px;
 }
 
 /* newmenu */
@@ -115,13 +115,28 @@ main {
     display: flex;
 }
 
-.newmenu1,
-.newmenu2 {
+.Newmenu {
     position: relative;
 }
 
-.newmenu1 > img {
+.newmenu1 img {
     width: 630px;
+}
+
+.newmenu .menu-txt {
+    position: absolute;
+    height: 100px;
+    padding-top: 22px;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.newmenu .menu-txt > h4 {
+    font-size: 30px;
+}
+
+.newmenu .menu-txt > p {
+    font-size: 24px;
 }
 
 .newmenu1 .menu-txt {
@@ -130,7 +145,7 @@ main {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.newmenu2 > img {
+.newmenu2 img {
     width: 510px;
     margin-left: 40px;
 }
@@ -141,24 +156,6 @@ main {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.newmenu1 .menu-txt,
-.newmenu2 .menu-txt {
-    position: absolute;
-    height: 100px;
-    padding-top: 22px;
-    padding-left: 30px;
-    color: #fff;
-}
-
-.newmenu1 .menu-txt > h4,
-.newmenu2 .menu-txt > h4 {
-    font-size: 30px;
-}
-
-.newmenu1 .menu-txt > p,
-.newmenu2 .menu-txt > p {
-    font-size: 24px;
-}
 
 /* bestmenu */
 .bestmenu-slide-btn h3 {
@@ -171,6 +168,7 @@ main {
 
 .bestmenu .bestmenu-list {
     display: flex;
+    overflow: hidden;
 }
 
 .bestmenu-list img {
@@ -179,12 +177,6 @@ main {
 
 .bestmenu .bestmenu-list > div {
     margin: 0 46px;
-}
-
-.bestmenu .menu4,
-.bestmenu .menu5,
-.bestmenu .menu6 {
-    display: none;
 }
 
 .bestmenu h4 {
@@ -198,14 +190,15 @@ main {
     font-size: 30px;
     background-color: #fef8ba;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.bestmenu .slide-btn .btn1 {
+.bestmenu .slide-btn .left-btn {
     position: absolute;
     top: 150px;
 }
 
-.bestmenu .slide-btn .btn2 {
+.bestmenu .slide-btn .right-btn {
     position: absolute;
     top: 150px; right: 0;
 }
@@ -233,21 +226,21 @@ main {
     line-height: 1.5em;
 }
 
+.mdpick .more-btn .btn {
+    position: absolute;
+    width: 50px; height: 50px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: rgba(254, 248, 186, 0.8);
+}
+
 .mdpick .more-btn a:hover {
     border-radius: 50%;
     background-color: rgba(254, 248, 186, 1);
     text-decoration: none;
-}
-
-.mdpick .more-btn .btn1,
-.mdpick .more-btn .btn2,
-.mdpick .more-btn .btn3 {
-    position: absolute;
-    width: 50px; height: 50px;
-    font-size: 48px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: rgba(254, 248, 186, 0.7);
+    font-size: 55px;
 }
 
 .mdpick .more-btn .btn1 {
@@ -302,11 +295,24 @@ main {
 .sns h3 {
     margin: 75px 0;
     font-size: 40px;
+    font-weight: normal;
     text-align: center;
     background-color: #ffd966;
 }
 
-.sns .img-list > img {
+.sns .img-list span {
+    display: inline-block;
+}
+
+.sns .img-list a {
+    opacity: 1;
+}
+
+.sns .img-list a:hover {
+    opacity: 0.8;
+}
+
+.sns .img-list img {
     width: 292px; height: 340px;
     padding-bottom: 5px;
 }
@@ -335,6 +341,11 @@ footer {
     display: flex;
 }
 
+.info-menu a,
+.info-business a {
+    padding-right: 5px;
+}
+
 .info-menu a:hover,
 .info-business a:hover {
     color: darkblue;
@@ -349,6 +360,12 @@ footer {
 .info-business address a,
 .info-business .copyright {
     font-size: 20px;
+    line-height: 25px;
+}
+
+.info-business address .cafeaddress,
+.info-business address a {
+    display: inline;
 }
 
 /*fix-menu*/
