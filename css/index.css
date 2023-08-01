@@ -260,9 +260,7 @@ main {
     margin-top: 140px;
 }
 
-.event1,
-.event2,
-.event3 {
+.Event {
     position: relative;
     margin-bottom: 30px;
 }
@@ -274,9 +272,7 @@ main {
     line-height: 40px;
 }
 
-.event1 p,
-.event2 p,
-.event3 p {
+.Event1 p {
     top: 50px;
 }
 
