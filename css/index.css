@@ -60,49 +60,54 @@ main {
     width: 100%; height: 100%;
 }
 
+.main-txt {
+    position: relative;
+}
+
 .main-ad .title {
     position: absolute;
-    text-align: center;
+    left: 50%; top: 50%;
     width: 520px;
-    top: 160px; left: 440px;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
 .main-ad .title > p {
-    font-size: 60px;
+    font-size: 375%;
     color: #24a6e0;
 }
 
 .main-ad .title > .big-txt {
-    font-size: 120px;
+    font-size: 750%;
     -webkit-text-stroke: 2px #fff;
 }
 
 .main-ad .menu-list {
-    font-size: 20px;
+    font-size: 125%;
 }
 
 .main-ad .menu-list strong {
-    font-size: 16px;
+    font-size: 100%;
 }
 
 .main-ad .menu-list .menu1 {
     position: absolute;
-    top: 175px; left: 120px;
+    top: 35%; left: 8%;
 }
 
 .main-ad .menu-list .menu2 {
     position: absolute;
-    top: 440px; left: 400px;
+    top: 85%; left: 29%;
 }
 
 .main-ad .menu-list .menu3 {
     position: absolute;
-    top: 430px; left: 850px;
+    top: 80%; left: 60%;
 }
 
 .main-ad .menu-list .menu4 {
     position: absolute;
-    top: 120px; left: 1100px;
+    top: 25%; left: 80%;
 }
 
 /* newmenu */
@@ -113,6 +118,7 @@ main {
 
 .newmenu-list {
     display: flex;
+    position: relative;
 }
 
 .Newmenu {
@@ -145,13 +151,62 @@ main {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.newmenu2 img {
-    width: 510px;
+.newmenu .hovbox {
+    width: 50%; height: 50%;
+    /* overflow: hidden; */
+}
+
+.newmenu .hovbox::before {
+    position: absolute;
+    top: 19%; left: 15%;
+    content: '';
+    width: 450px; height: 400px;
+    background-color: #fff;
+    border-radius: 10%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.newmenu .hovbox2::before {
+    width: 450px; height: 300px;
+    top: 20%; left: 5%;
+}
+
+.newmenu .hovbox:hover::before {
+    opacity: 0.8;
+}
+
+.newmenu .hovbox .newhov {
+    position: absolute;
+    top: 30%; left: 20%;
+    width: 400px; height: 200px;
+    line-height: 1.3;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.newmenu .hovbox .newhov:hover {
+    opacity: 1;
+}
+
+.newmenu2 {
     margin-left: 40px;
 }
 
+.newmenu2 img {
+    width: 510px;
+}
+
+.newmenu .hovbox .newhov2 {
+    top: 25%; left: 10%;
+}
+
+.newmenu .hovbox .newhov p {
+    font-size: 30px;
+}
+
 .newmenu2 .menu-txt {
-    top: 531px; left: 40px;
+    top: 531px;
     width: 510px;
     background-color: rgba(0, 0, 0, 0.2);
 }
